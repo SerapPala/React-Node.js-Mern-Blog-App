@@ -1,0 +1,84 @@
+//GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap');
+
+//FONT VARIABLES
+$PrimaryFont:'Josefin Sans', sans-serif;//TOPBAR
+$SecondaryFont:'Lora', sans-serif;
+$ThirdFont:'Varela Round', sans-serif;
+
+//COLOR VARIABLES
+
+
+
+$gray:#4C4C6D;
+$green:#B8DFD8;
+$light:#E8F6EF;
+$orange:#FFE194;
+$orangeDark:#c77698;
+$title:#ecbd76;
+$search: #666;
+$darkgray:#444;
+
+$side:#fafafa;
+$borderTop: #a7a4a4;
+$sideColor:#222;
+$auth:#55ffb0;
+$navi:#1f1f1e;
+$update:#f0a7e4 ;
+$delete:#c27579 ;
+$black:#090909;
+$white:#8a8dac;
+
+
+//box shadow
+$box-shadow:1px 1px 0.4rem 1px lightgrey;
+//border radius
+$Radius:50%;
+
+// Media Querie Break Points
+
+// Small phones
+$screen-tn-max: 450px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 596px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+
+
+
+
+// Phone devices
+@mixin tn {
+  @media (max-width: #{$screen-tn-max}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}

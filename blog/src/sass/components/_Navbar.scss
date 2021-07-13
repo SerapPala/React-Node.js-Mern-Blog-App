@@ -1,0 +1,94 @@
+.navbar{
+  font-family:$PrimaryFont;
+  @include flexCenter;
+  width:100%;
+  position:fixed;
+  top:0;
+  background:transparent;
+  height: 7rem;
+  transition: all 0.5s linear;
+  z-index:999;
+  box-shadow:0 0.5rem 2rem 0.2rem rgba(0,0,0,0.1);
+  top:0;
+
+  &__container{
+      width:100%;
+      height: 6rem;
+      @include flexSpaceBetween;
+          @include md {
+              width:90%;
+            }
+          
+            @include sm {
+              width:80%;
+            }
+  }
+  &__left{
+
+    &--social{
+      font-size:2rem;
+      margin-right:1rem;
+      color:$navi;
+      transition: all 0.5s linear;
+
+        &:hover{
+            color:lightgoldenrodyellow;
+        } 
+    }
+  }
+  &__center{
+    color:$navi;
+    &--items{
+      @include flexHorizontal;
+      margin:0;
+      padding:0;
+      color:$navi;
+        &__item{
+          margin-right: 2rem;
+          font-size:1.8rem;
+          font-weight:400;
+          cursor:pointer;
+          color:$navi;
+          text-decoration: none;
+          &:hover{
+            text-decoration: none;
+          }
+         
+        }
+    }
+
+  }
+  &__right{
+
+    img{
+      width:4rem;
+      height:4rem;
+      border-radius:$Radius;
+      object-fit:cover;
+      cursor:pointer;
+    }
+
+    &--items{
+      @include flexHorizontal;
+      margin:0;
+      padding:0;
+      color:$navi;
+
+        &__item{
+          margin-right: 2rem;
+          font-size:1.8rem;
+          font-weight:400;
+          cursor:pointer;
+      
+        }
+    }
+  }
+}
+
+.search{
+  color:red;
+  font-size:2.5rem;
+  font-weight:400;
+  cursor:pointer;
+}
+

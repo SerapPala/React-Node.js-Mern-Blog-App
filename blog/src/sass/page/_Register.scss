@@ -1,0 +1,85 @@
+.register{
+    margin-top:6.9rem;
+    height:99vh;
+    @include loginback;
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+     url("https://images.pexels.com/photos/768472/pexels-photo-768472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    font-family: $PrimaryFont;
+    font-weight: 400;
+
+    &__title{
+        font-size:50px;
+       
+    }
+
+    &__form{
+        position:relative;
+        margin-top:20px;
+        @include FlexColumn;
+
+        label{
+            margin:10px 0;
+            font-size:18px;
+
+        }
+
+        input{
+            font-size:16px;
+            width:300px;
+            height:40px;
+            padding:10px;
+            background-color:#fefefe;
+            border:none;
+            border-radius: 10px;
+            &::placeholder {
+                font-size:16px;
+              }
+            &:focus {
+                outline:none;
+                font-size:18px;
+                }
+
+        }
+
+        &--registerbtn{
+            margin-top:20px;
+            cursor:pointer;
+            background-color: teal;
+            border:none;
+            border-radius:10px;
+            font-size:15px;
+            padding:10px;
+            &:hover{
+                background-color: lightcoral;
+                text-decoration: none;
+               
+            }
+            &__linkk{
+                font-size:15px; 
+                color:#fefefe;
+                &:hover{
+                    
+                    text-decoration: none;
+                   
+                }
+               }
+
+        }
+        
+        &--loginbtn{
+           position:absolute;
+           top:90px;
+           right:20px;
+           background-color:lightcoral;
+           border:none;
+           cursor:pointer;
+           color:#fefefe;
+           font-size:15px; 
+           
+
+           
+
+        }
+    }
+}

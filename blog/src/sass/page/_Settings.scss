@@ -1,0 +1,83 @@
+.settings{
+margin-top:8rem;
+display:flex;
+    &__wrapper{
+        flex:9;
+        padding:20px;
+
+
+        &--title{
+            @include flexSpaceBetween;
+
+            &__update{
+                font-size:30px;
+                margin-bottom: 20px;
+                color:$update;
+            }
+
+            &__delete{
+                color:$delete;
+                font-size:12px;
+                cursor:pointer;
+            }
+        }
+
+        &--form{
+            @include FlexColumn;
+
+            label{
+                font-size:20px;
+                margin-top:20px;
+            }
+
+            input{
+                color:gray;
+                margin:10px 0;
+                height:30px;
+                border:none;
+                border-bottom:1px solid lightgray;
+                &::placeholder {
+                    font-size:18px;
+                  }
+                  &:focus {
+                    outline:none;
+                    font-size:20px;
+                    }
+
+            }
+
+            &__profilepicture{
+                @include FlexAlignCenter;
+                margin-top:10px 0;
+
+
+                img{
+                    width:70px;
+                    height:70px;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+
+                &__icon{
+                    width:25px;
+                    height:25px;
+                    border-radius:5px;
+                    background-color: $update;
+                    color:#fefefe;
+                    @include flexCenter;
+                    margin-left:10px;
+                    cursor:pointer;
+                }
+            }
+
+            &__btn{
+                width:150px;
+                align-self:center;
+                font-size:15px;
+                cursor:pointer;
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+//npm run scss
+@import "base/base";
+
+// import abstracts
+@import "abstracts/responsive";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// import utilitiess
+@import "utilities/utilities";
+
+// import components
+@import "components/Navbar";
+@import "components/Header";
+@import "components/Sidebar";
+@import "components/posts";
+@import "components/Post";
+@import "components/singlePost";
+// import pages
+@import "page/Home";
+@import "page/Single";
+@import "page/Write";
+@import "page/Settings";
+@import "page/Login";
+@import "page/Register";

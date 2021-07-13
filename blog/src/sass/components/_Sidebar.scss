@@ -1,0 +1,70 @@
+.Sidebar{
+flex:3;
+@include flexColumnCenter;
+margin:2rem;
+margin-top:2rem;
+padding-bottom:3rem;
+background-color: $side;
+border-radius:10px;
+    &__item{
+        @include flexColumnCenter;
+            &--title{
+                margin-top:4rem;
+                    margin:10px;
+                    padding:13px;
+                    width: 80%;
+                    border-top:1px solid $borderTop;
+                    border-bottom:1px solid $borderTop;
+                    font-family: $ThirdFont;
+                    font-size: 2.1rem;
+                    color:$sideColor;
+                    font-weight:600;
+                    line-height:2rem;
+                    text-align: center;
+            }
+            img{
+                margin-top:15px;
+                width:100%;
+                height:150px;
+                border-radius:5px;
+                object-fit:cover;
+            }
+            p{
+                padding:30px;
+                font-size: 1.5rem;
+            }
+            &--list{
+                    margin-bottom:30px;
+                    font-size: 2.1rem;
+                    
+                &__listItem{
+                        display: inline-block;
+                        width:50%;
+                        padding-left:3.3rem;
+                        margin-top:15px;
+                        cursor:pointer;
+                        text-decoration: none;
+                        color:$sideColor;
+                        &:hover{
+                            
+                            text-decoration: none;
+                            color:$title;
+                        }
+                }
+            }
+            
+            &--social{
+                margin-top:15px;
+                width:250px;
+                @include flexCenter;
+                &__icon{
+                    margin-top:15px;
+                    width:250px;
+                    @include flexCenter;
+                    font-size:2.1rem;
+                    padding-left:10px;
+                    cursor:pointer;
+                }
+            }
+    }
+}

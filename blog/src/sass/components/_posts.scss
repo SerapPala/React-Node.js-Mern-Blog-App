@@ -1,0 +1,5 @@
+.posts{
+    flex:9;
+    @include flexWrap;
+    padding:20px;
+}
